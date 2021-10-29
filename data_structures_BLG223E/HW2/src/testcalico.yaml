@@ -1,0 +1,50 @@
+- compile:
+    run: g++ -g main.cpp Processor.cpp Job.cpp -I ../include -o ../bin/main
+    exit: 0
+    blocker: true
+    points: 1
+
+- case_1:
+    run: ../bin/main ../case_1.txt
+    script:
+      - expect: "F 330 340 "
+    points: 2
+
+- case_2:
+    run: ../bin/main ../case_2.txt
+    script:
+      - expect: "R 180 -1 F 120 160 F 10 40 "
+    points: 2
+
+- case_3:
+    run: ../bin/main ../case_3.txt
+    script:
+      - expect: "WQ 5 7 9 W -1 -1 R 130 -1 F 130 170 "
+    points: 2
+
+- case_4:
+    run: ../bin/main ../case_4.txt
+    script:
+      - expect: "WQ 7 WQ 12 13 14 F 47 116 R 212 -1 W -1 -1 "
+    points: 2
+
+- case_5:
+    run: ../bin/main ../case_5.txt
+    script:
+      - expect: "WQ WQ 15 16 17 18 R 89 -1 R 176 -1 R 201 -1 "
+    points: 2
+
+- case_6:
+    run: ../bin/main ../case_6.txt
+    script:
+      - expect: "WQ 4 5 6 7 8 9 10 11 12 13 WQ 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 F 2266 2318 F 11113 11260 F 11736 11866 "
+    points: 2
+
+- case_7:
+    run: ../bin/main ../case_7.txt
+    script:
+      - expect: "WQ 17 WQ 17 18 19 20 21 22 23 24 25 F 1719 2145 R 11218 -1 R 11670 -1 "
+    points: 2
+
+
+    

@@ -1,0 +1,22 @@
+RBV 8
+PUSH Tolga
+PUSH Murat
+PUSH Ali
+PUSH Onur
+PUSH Esin
+PUSH Vehbi
+PUSH Cenk
+PUSH Riza
+PUSH Ozlem
+PUSH Nur
+GNC
+FIND Esin
+PUSH Ahmet
+RM Ahmet
+RM Tolga
+PUSH Haydar
+RMI 0
+UPDATE 2 Duygu
+FIND Esin
+GNC
+PRINT

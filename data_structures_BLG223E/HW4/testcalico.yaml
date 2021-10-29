@@ -1,0 +1,11 @@
+- compile:
+    run: g++ -g main.cpp Board.cpp Piece.cpp Move.cpp md5.cpp -I ../include -o ../bin/main
+    exit: 0
+    blocker: true
+    points: 1
+
+- case_1:
+    run: ../bin/main ../case_1.txt
+    script:
+      - expect: "EXIT NOT POSSIBLE"
+    points: 1

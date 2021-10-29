@@ -1,0 +1,38 @@
+- compile:
+    run: g++ -g main.cpp Node.cpp BlockNode.cpp BlockList.cpp md5.cpp -I ../include -o ../bin/main
+    exit: 0
+    blocker: true
+    points: 3
+
+- case_1:
+    run: ../bin/main ../case_1.txt
+    script:
+      - expect: "Ali:70 Aylin:140 Ayse:90 Murat:90 Zeynep:110 NA "
+    points: 2
+
+- case_2:
+    run: ../bin/main ../case_2.txt
+    script:
+      - expect: "Ali:70 Aylin:140 Ayse:90 Murat:90 Zeynep:110 Ali:140 Aylin:60 Ayse:140 Murat:40 Zeynep:120 299f21183e7bd2b399abd5aab8178e63 "
+    points: 2
+
+- case_3:
+    run: ../bin/main ../case_3.txt
+    script:
+      - expect: "NA 0 Ali:170 Aylin:60 Ayse:140 Murat:10 Zeynep:120 2e8a637831a330a755e0d78b82890445 "
+    points: 2
+
+- case_4:
+    run: ../bin/main ../case_4.txt
+    script:
+      - expect: "Ali:1000 Aylin:1372 Ayse:898 Murat:835 Zeynep:895 aca051c5373aa6f8952dbbb5ecc537ad "
+    points: 3
+
+- case_5:
+    run: ../bin/main ../case_5.txt
+    script:
+      - expect: "Aden:-3313 Ahmet:7392 Ali:2610 Aylin:-9307 Ayse:-4133 Balkan:5229 Baran:3752 Cenk:-3442 Demet:-1545 Duygu:-10565 Gultekin:-4717 Hayrettin:9542 Maya:12812 Mete:10115 Murat:8246 Nehir:14098 Nur:-1318 Ozlem:-13583 Tamer:860 Vehbi:-10094 Yusuf:16810 Zeynep:8033 1ff16f0d968bfc279eeec7ae8a2fcad7 "
+    points: 3
+
+
+    

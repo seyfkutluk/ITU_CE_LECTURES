@@ -1,0 +1,107 @@
+Ali 1000 Ayse 1000 Murat 1000 Aylin 1000 Zeynep 1000
+BLOCK Ali Murat 12 Murat Ayse 17 Ali Ayse 17 Zeynep Aylin 1 Ayse Aylin 8 Ayse Aylin 4 Aylin Ayse 16 Ayse Ayse 19 Aylin Murat 9 Ayse Aylin 11
+BLOCK Ali Aylin 14 Ayse Ali 17 Ali Ali 18 Murat Aylin 2                  
+BLOCK Ali Aylin 14 Murat Murat 10 Ayse Aylin 8 Zeynep Aylin 16 Ayse Ali 5 Zeynep Zeynep 1            
+BLOCK Murat Zeynep 8 Aylin Zeynep 15                        
+BLOCK Aylin Ayse 16 Ayse Zeynep 20 Aylin Murat 5 Zeynep Ayse 0 Zeynep Aylin 18 Aylin Aylin 7 Aylin Ayse 11 Ayse Aylin 8 Zeynep Aylin 9 Murat Ali 20
+BLOCK Ayse Zeynep 19 Zeynep Aylin 3 Ayse Ayse 16 Ayse Murat 9 Aylin Zeynep 11 Zeynep Ali 12            
+BLOCK Ali Murat 17 Aylin Ali 12                        
+BLOCK Aylin Ayse 2 Ali Murat 3 Murat Zeynep 12 Aylin Ali 3 Murat Ali 9 Zeynep Ali 7            
+BLOCK Aylin Murat 18 Aylin Ayse 6 Murat Ali 11 Ali Ayse 10 Ayse Ayse 11 Ali Zeynep 17 Murat Ayse 4 Zeynep Zeynep 11 Aylin Zeynep 15 Zeynep Ayse 9
+BLOCK Aylin Aylin 3 Murat Murat 14 Ali Murat 0 Aylin Ali 5                  
+BLOCK Murat Murat 8 Aylin Ali 6 Ali Zeynep 5 Ayse Aylin 20 Ali Ali 2 Zeynep Ayse 17            
+BLOCK Zeynep Aylin 1 Murat Ayse 17                        
+BLOCK Ayse Ayse 15 Ayse Aylin 20 Aylin Zeynep 8 Ayse Murat 11 Aylin Ali 17 Zeynep Ayse 18 Ali Ali 3 Ayse Murat 19 Ali Aylin 10 Ali Murat 0
+BLOCK Murat Murat 4 Aylin Aylin 2 Ayse Zeynep 15 Aylin Ali 10 Ayse Zeynep 12 Murat Murat 9            
+BLOCK Ayse Murat 4 Ali Aylin 0                        
+BLOCK Murat Ayse 11 Murat Zeynep 14 Murat Aylin 18 Ayse Ayse 19 Aylin Murat 5 Murat Aylin 13            
+BLOCK Ali Zeynep 2 Ayse Ayse 7 Ayse Zeynep 14 Murat Ali 15 Aylin Ayse 2 Ali Ayse 2 Aylin Ayse 1 Murat Ayse 5 Zeynep Murat 12 Ali Ali 2
+BLOCK Murat Murat 10 Aylin Ali 1 Aylin Murat 7 Ali Murat 9                  
+BLOCK Zeynep Aylin 13 Murat Zeynep 8 Ayse Ayse 7 Aylin Aylin 9 Aylin Ayse 5 Murat Ayse 12            
+BLOCK Ayse Ayse 9 Zeynep Aylin 18                        
+BLOCK Ayse Ayse 8 Ayse Zeynep 11 Murat Ayse 10 Aylin Aylin 14 Aylin Murat 3 Ayse Ali 16 Ayse Murat 13 Ali Aylin 13 Ayse Murat 19 Ali Ali 12
+BLOCK Aylin Ayse 1 Ali Ali 10 Ali Murat 1 Zeynep Aylin 18 Zeynep Ayse 17 Ayse Aylin 10            
+BLOCK Ayse Zeynep 10 Zeynep Ayse 8                        
+BLOCK Ali Zeynep 17 Aylin Zeynep 8 Ayse Aylin 6 Murat Murat 16 Ali Ali 6 Zeynep Murat 6            
+BLOCK Aylin Aylin 3 Zeynep Zeynep 6 Ayse Ayse 18 Ayse Ayse 10 Zeynep Aylin 9 Ali Aylin 2 Ali Murat 5 Ayse Murat 14 Murat Aylin 15 Ali Zeynep 1
+BLOCK Zeynep Ayse 19 Murat Ali 8 Zeynep Zeynep 16 Zeynep Murat 7                  
+BLOCK Ali Ayse 4 Murat Ayse 4 Aylin Zeynep 4 Aylin Aylin 20 Aylin Murat 13 Aylin Aylin 14            
+BLOCK Aylin Ali 1 Ayse Ayse 0                        
+BLOCK Ali Aylin 7 Aylin Zeynep 19 Ayse Murat 2 Zeynep Ali 17 Ayse Ali 18 Ali Aylin 4 Ali Aylin 4 Aylin Zeynep 0 Aylin Ayse 19 Aylin Zeynep 4
+BLOCK Aylin Zeynep 19 Ali Ali 19 Ali Ayse 18 Ayse Zeynep 19 Aylin Zeynep 1 Murat Ayse 12            
+BLOCK Murat Ayse 20 Ali Zeynep 0                        
+BLOCK Murat Aylin 17 Zeynep Aylin 10 Ali Murat 12 Ali Murat 16 Murat Ayse 11 Aylin Ayse 10            
+BLOCK Ayse Aylin 5 Ayse Aylin 2 Ayse Murat 14 Ali Zeynep 20 Ayse Aylin 11 Murat Murat 8 Ali Ali 13 Ali Ali 8 Zeynep Ali 8 Aylin Zeynep 8
+BLOCK Ayse Zeynep 19 Ayse Murat 14 Aylin Zeynep 9 Murat Ayse 4                  
+BLOCK Ayse Ali 20 Ali Ayse 7 Ayse Aylin 10 Murat Ayse 18 Ayse Murat 16 Ayse Aylin 10            
+BLOCK Aylin Ali 3 Ali Ayse 15                        
+BLOCK Aylin Ayse 7 Ali Aylin 12 Zeynep Zeynep 6 Murat Ayse 7 Zeynep Zeynep 15 Murat Ali 4 Ayse Ayse 0 Ayse Murat 11 Ayse Aylin 9 Zeynep Aylin 14
+BLOCK Ayse Murat 8 Ali Ayse 0 Ayse Zeynep 16 Zeynep Ali 2 Ali Aylin 18 Ayse Aylin 18            
+BLOCK Zeynep Aylin 14 Zeynep Ali 13                        
+BLOCK Murat Aylin 15 Ali Aylin 7 Zeynep Aylin 20 Zeynep Aylin 16 Aylin Zeynep 0 Ayse Ayse 1            
+BLOCK Zeynep Ali 17 Zeynep Murat 4 Ayse Murat 14 Murat Ali 0 Zeynep Murat 13 Aylin Aylin 16 Ayse Aylin 12 Zeynep Aylin 19 Ali Ayse 15 Ayse Ayse 16
+BLOCK Zeynep Murat 15 Murat Zeynep 2 Murat Murat 11 Ayse Zeynep 5                  
+BLOCK Murat Ayse 9 Ayse Murat 6 Ali Aylin 20 Zeynep Aylin 12 Murat Aylin 3 Ali Ali 7            
+BLOCK Ayse Ali 9 Ayse Zeynep 12                        
+BLOCK Murat Ayse 1 Murat Aylin 4 Ayse Zeynep 5 Ali Ali 7 Zeynep Murat 15 Zeynep Aylin 2 Zeynep Ayse 14 Murat Ayse 4 Murat Aylin 19 Zeynep Aylin 6
+BLOCK Ayse Aylin 12 Murat Ayse 2 Murat Ayse 16 Aylin Aylin 9 Ayse Aylin 11 Ali Ali 3            
+BLOCK Murat Aylin 17 Murat Ayse 17                        
+BLOCK Zeynep Aylin 12 Aylin Ali 9 Ali Aylin 11 Murat Aylin 17 Murat Aylin 9 Aylin Ali 8            
+BLOCK Ayse Aylin 3 Ali Murat 2 Aylin Ayse 19 Ayse Murat 16 Aylin Ayse 10 Zeynep Ayse 15 Aylin Zeynep 10 Murat Aylin 18 Zeynep Aylin 0 Ali Ayse 12
+BLOCK Murat Ayse 4 Aylin Ayse 13 Murat Murat 18 Zeynep Ali 1                  
+BLOCK Ayse Murat 18 Ayse Ali 4 Aylin Aylin 18 Aylin Ali 8 Zeynep Ali 20 Ali Ali 11            
+BLOCK Zeynep Ali 18 Zeynep Zeynep 6                        
+BLOCK Zeynep Ayse 4 Ayse Ali 5 Zeynep Ayse 14 Zeynep Murat 5 Murat Ayse 2 Ayse Ayse 19 Ali Zeynep 18 Ayse Aylin 9 Ali Aylin 0 Ali Ayse 3
+BLOCK Ali Ayse 5 Ali Aylin 9 Aylin Ali 9 Ali Murat 17 Murat Aylin 2 Zeynep Ali 2            
+BLOCK Aylin Ali 2 Ali Murat 4                        
+BLOCK Zeynep Ayse 12 Murat Ali 17 Zeynep Murat 4 Zeynep Ayse 11 Ali Murat 5 Aylin Ayse 16            
+BLOCK Zeynep Ayse 20 Ayse Murat 6 Zeynep Ali 3 Ayse Ayse 20 Ali Zeynep 14 Ali Ali 8 Zeynep Zeynep 17 Murat Ali 5 Aylin Zeynep 17 Murat Ali 6
+BLOCK Murat Aylin 8 Ali Ali 5 Zeynep Ali 19 Murat Ali 17                  
+BLOCK Ali Ali 6 Ayse Ali 17 Zeynep Ayse 7 Aylin Aylin 20 Aylin Zeynep 2 Ayse Ali 3            
+BLOCK Ayse Ayse 7 Ayse Aylin 6                        
+BLOCK Ayse Zeynep 16 Ayse Murat 4 Ali Aylin 15 Ayse Ayse 17 Murat Ayse 1 Zeynep Zeynep 19 Murat Ayse 8 Murat Zeynep 8 Ali Aylin 19 Ayse Murat 14
+BLOCK Ayse Aylin 19 Zeynep Zeynep 17 Murat Ali 11 Aylin Zeynep 3 Aylin Zeynep 3 Ali Ayse 6            
+BLOCK Zeynep Murat 2 Ayse Ali 16                        
+BLOCK Ali Aylin 4 Aylin Ayse 20 Murat Murat 4 Ali Murat 2 Murat Murat 7 Ali Ayse 3            
+BLOCK Ayse Murat 0 Ali Ayse 6 Ayse Zeynep 18 Aylin Ayse 19 Murat Aylin 16 Murat Ali 1 Zeynep Ali 7 Ali Ali 4 Aylin Aylin 9 Ayse Ayse 0
+BLOCK Zeynep Zeynep 3 Ali Aylin 14 Ayse Aylin 5 Ayse Ali 1                  
+BLOCK Zeynep Murat 19 Murat Aylin 10 Aylin Ali 13 Murat Murat 11 Ayse Ayse 8 Zeynep Murat 5            
+BLOCK Ali Aylin 2 Aylin Ayse 8                        
+BLOCK Zeynep Ali 2 Murat Aylin 5 Aylin Ayse 5 Ayse Ayse 13 Ayse Zeynep 4 Zeynep Ayse 15 Ali Zeynep 10 Ali Aylin 3 Aylin Ayse 17 Ayse Murat 10
+BLOCK Aylin Zeynep 4 Ali Zeynep 6 Ayse Zeynep 18 Murat Aylin 10 Ayse Murat 2 Ali Ayse 15            
+BLOCK Murat Ali 5 Ayse Ayse 3                        
+BLOCK Ayse Ayse 20 Zeynep Aylin 7 Murat Murat 8 Ayse Ayse 11 Ali Zeynep 13 Ayse Zeynep 3            
+BLOCK Murat Zeynep 15 Ayse Zeynep 4 Aylin Ali 8 Aylin Ayse 16 Zeynep Murat 12 Zeynep Murat 17 Zeynep Zeynep 17 Aylin Murat 9 Zeynep Ali 7 Zeynep Aylin 16
+BLOCK Ali Ali 18 Aylin Ali 5 Zeynep Zeynep 15 Zeynep Aylin 8                  
+BLOCK Aylin Zeynep 5 Zeynep Zeynep 7 Aylin Murat 16 Zeynep Zeynep 10 Ayse Ali 8 Ayse Murat 16            
+BLOCK Aylin Ali 7 Zeynep Zeynep 18                        
+BLOCK Ali Zeynep 16 Ayse Ayse 5 Murat Murat 10 Ali Aylin 14 Ayse Murat 5 Aylin Ali 2 Murat Aylin 20 Murat Aylin 10 Ali Aylin 19 Ayse Zeynep 3
+BLOCK Murat Ali 14 Ayse Ayse 16 Aylin Murat 12 Zeynep Ali 6 Ali Ayse 5 Ayse Ali 11            
+BLOCK Ali Ali 7 Murat Ayse 10                        
+BLOCK Ayse Ali 11 Zeynep Aylin 11 Ayse Ayse 19 Ayse Ali 10 Ayse Ayse 8 Zeynep Ayse 3            
+BLOCK Ayse Murat 3 Zeynep Zeynep 1 Ali Zeynep 15 Ayse Murat 14 Murat Ayse 19 Aylin Ayse 19 Murat Ayse 2 Aylin Ayse 6 Ayse Aylin 7 Ayse Zeynep 12
+BLOCK Aylin Ali 9 Ayse Ayse 3 Ayse Ali 13 Murat Ayse 19                  
+BLOCK Ali Ali 19 Murat Ali 10 Ali Ayse 13 Ayse Murat 10 Murat Ali 3 Ali Aylin 18            
+BLOCK Murat Ali 0 Zeynep Ali 9                        
+BLOCK Murat Aylin 15 Ali Zeynep 17 Murat Zeynep 15 Ayse Zeynep 1 Ali Aylin 3 Zeynep Zeynep 7 Aylin Ayse 17 Aylin Murat 3 Murat Aylin 4 Ali Ayse 11
+BLOCK Ayse Aylin 6 Murat Murat 4 Murat Ayse 2 Aylin Aylin 17 Zeynep Ali 11 Ali Aylin 4            
+BLOCK Aylin Aylin 6 Aylin Aylin 14                        
+BLOCK Ali Zeynep 9 Murat Murat 7 Aylin Zeynep 13 Ali Zeynep 9 Ayse Aylin 5 Zeynep Ali 17            
+BLOCK Aylin Aylin 14 Ayse Ali 15 Zeynep Zeynep 0 Murat Ayse 8 Ali Ayse 12 Zeynep Ayse 16 Murat Zeynep 3 Murat Ali 3 Ali Murat 20 Zeynep Ali 5
+BLOCK Aylin Ali 12 Ayse Aylin 12 Murat Murat 2 Zeynep Aylin 19                  
+BLOCK Ayse Zeynep 3 Murat Murat 7 Zeynep Aylin 18 Zeynep Ali 10 Zeynep Zeynep 12 Ali Zeynep 3            
+BLOCK Murat Murat 4 Zeynep Aylin 8                        
+BLOCK Ayse Murat 13 Murat Ali 2 Ayse Aylin 10 Ayse Ali 2 Zeynep Zeynep 0 Ayse Murat 18 Murat Aylin 0 Aylin Aylin 16 Aylin Ayse 19 Ayse Zeynep 12
+BLOCK Ali Ayse 5 Aylin Ali 6 Ali Zeynep 14 Aylin Ayse 10 Ali Ayse 12 Zeynep Ali 5            
+BLOCK Aylin Zeynep 20 Murat Aylin 9                        
+BLOCK Ali Murat 0 Aylin Ayse 12 Murat Zeynep 20 Murat Ali 7 Aylin Aylin 6 Murat Ayse 4            
+BLOCK Zeynep Murat 3 Zeynep Zeynep 16 Ayse Ali 5 Murat Zeynep 4 Zeynep Ayse 0 Zeynep Murat 6 Ali Ali 15 Ayse Ali 11 Aylin Aylin 12 Zeynep Ayse 1
+BLOCK Ayse Ayse 5 Aylin Zeynep 8 Aylin Murat 19 Aylin Aylin 3                  
+BLOCK Ayse Aylin 6 Murat Zeynep 19 Murat Aylin 3 Murat Ayse 2 Ayse Ali 16 Zeynep Ali 11            
+BLOCK Murat Aylin 1 Murat Ayse 15                        
+BLOCK Ali Murat 2 Ali Ali 3 Murat Aylin 9 Murat Aylin 17 Murat Ali 10 Ali Aylin 9 Ali Zeynep 10 Aylin Aylin 16 Ayse Aylin 1 Ayse Ali 1
+BLOCK Ayse Ayse 13 Ali Murat 3 Ayse Aylin 9 Ayse Ali 9 Murat Ayse 6 Ali Murat 15            
+BLOCK Zeynep Ali 20 Ayse Zeynep 19                        
+BLOCK Ali Ali 12 Aylin Ayse 10 Aylin Murat 16 Murat Aylin 2 Zeynep Aylin 13 Ayse Murat 4            
+BALANCE
+PRINT

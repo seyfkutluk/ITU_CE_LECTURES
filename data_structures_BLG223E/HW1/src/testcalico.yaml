@@ -1,0 +1,50 @@
+- compile:
+    run: g++ -g main.cpp ExpandingArray.cpp -I ../include -o ../bin/main
+    exit: 0
+    blocker: true
+    points: 1
+
+- case_1:
+    run: ../bin/main ../case_1.txt
+    script:
+      - expect: "5 is at index 4 -10 is not in the array 7 1 2 3 4 5 6 7 "
+    points: 2
+
+- case_2:
+    run: ../bin/main ../case_2.txt
+    script:
+      - expect: "10 5 5 "
+    points: 2
+
+- case_3:
+    run: ../bin/main ../case_3.txt
+    script:
+      - expect: "20 10 "
+    points: 2
+
+- case_4:
+    run: ../bin/main ../case_4.txt
+    script:
+      - expect: "14 8 "
+    points: 2
+
+- case_5:
+    run: ../bin/main ../case_5.txt
+    script:
+      - expect: "1007 1000 1505 1500 1006 1000 12 11 "
+    points: 2
+
+- case_6:
+    run: ../bin/main ../case_6.txt
+    script:
+      - expect: "300 300 705 700 2820 1500 1110 1100 1110 900 202 202 13 11 "
+    points: 2
+
+- case_7:
+    run: ../bin/main ../case_7.txt
+    script:
+      - expect: "10 0 200 200 "
+    points: 2
+
+
+    

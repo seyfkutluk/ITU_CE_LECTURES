@@ -1,0 +1,9 @@
+5
+SS CAP_BY_CAP
+ADD 1 2 3 4 5 -6 7 8 
+ADD 9 10  
+GC
+REMOVE 1 2 3 4 5 
+GC
+REMOVE -6 
+GC

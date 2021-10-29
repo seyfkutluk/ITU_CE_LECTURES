@@ -1,0 +1,7 @@
+Ali 100 Ayse 100 Murat 100 Aylin 100 Zeynep 100
+BLOCK Ali Ayse 20 
+BLOCK Ayse Murat 30 Murat Aylin 40
+BLOCK Aylin Zeynep 20 Zeynep Ali 10 Ali Aylin 20
+BALANCE
+CLEAR
+PRINT

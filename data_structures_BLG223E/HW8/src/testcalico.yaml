@@ -1,0 +1,23 @@
+- compile:
+    run: g++ -g main.cpp -o ../bin/main
+    exit: 0
+    blocker: true
+    points: 1
+
+- case_1:
+    run: ../bin/main ../case_1.txt 
+    script:
+      - expect: "ABDABD BDABDA DABDAB"
+    points: 2
+
+- case_2:
+    run: ../bin/main ../case_2.txt 
+    script:
+      - expect: "FBAFBAFBG FBAFBGBAF FBGBAFBAF"
+    points: 2
+
+- case_3:
+    run: ../bin/main ../case_3.txt 
+    script:
+      - expect: "BAEBAECEC BAECEBAEC BAECECEBA BAFBAECEC BAGBAECEC CEBAEBAEC CEBAECEBA CEBAFBAEC CEBAGBAEC CECEBAEBA CECEBAFBA CECEBAGBA"
+    points: 2
