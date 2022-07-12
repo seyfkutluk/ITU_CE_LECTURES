@@ -1,0 +1,8 @@
+- First example is about thread creation and passing an argument to the thread
+
+- Second example is about joining threads
+
+- Third example is about accessing/modifying a global variable with threads (next week you will see semaphore/mutex to deal with this problem)
+
+
+There are comments in the code files, you may also contact course assistant to ask questions if you have one.
