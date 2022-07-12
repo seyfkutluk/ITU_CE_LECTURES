@@ -1,0 +1,279 @@
+\documentclass[pdftex,12pt,a4paper]{article}
+
+\usepackage{graphicx}  
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{breakcites}
+\usepackage{indentfirst}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage[cmex10]{amsmath}
+\usepackage{stfloats}
+\usepackage{multirow}
+\usepackage{setspace}
+\usepackage{placeins}
+\usepackage{float}
+
+\renewcommand{\refname}{REFERENCES}
+\linespread{1.3}
+
+\usepackage{mathtools}
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\thispagestyle{empty}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textbf{}\\
+\textbf{\Large{ISTANBUL TECHNICAL UNIVERSITY}}\\
+\vspace{0.5cm}
+\textbf{\Large{COMPUTER ENGINEERING DEPARTMENT}}\\
+\vspace{2cm}
+\textbf{\Large{BLG 222E\\ COMPUTER ORGANIZATION\\ PROJECT REPORT}}\\
+\vspace{2.8cm}
+\begin{table}[ht]
+\centering
+\Large{
+\begin{tabular}{lcl}
+\textbf{PROJECT NO}  & : & 1 \\
+\textbf{DUE DATE}  & : & 11.05.2022 \\
+\textbf{GROUP NO}  & : & G15 \\
+\end{tabular}}
+\end{table}
+\vspace{1cm}
+\textbf{\Large{GROUP MEMBERS:}}\\
+\begin{table}[ht]
+\centering
+\Large{
+\begin{tabular}{rcl}
+150180073  & : & SEYFÜLMÜLÜK KUTLUK \\
+150210734  & : & AHMET BARIŞ EMRE DURAK \\
+150180118  & : & BURAK ENGİN AŞIKLAR \\
+\end{tabular}}
+\end{table}
+\vspace{2.8cm}
+
+\end{center}
+
+\end{titlepage}
+
+
+
+\setcounter{page}{1}
+\section{PROJECT PARTS}
+
+\subsection{PART 1}
+
+\subsubsection{PART 1A}
+
+For the first part of part A, an 8-bit register has been created. This register has different functionalities depending on the input given in FunSel, and checks whether enable is on in order to execute the operation. 
+
+\begin{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{register8.png}	
+	\caption{8-bit register's design}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{8bitregistercode.png}	
+	\caption{Code of the 8-bit register}
+	\label{fig1-1}
+\end{figure}
+\singlespacing
+
+CLK input is for the clock, E is the enable, Din is the data input that's going to be used for load, and lastly FunSel is to select operations.
+
+\pagebreak
+
+\subsubsection{PART 1B}
+
+Similar to the earlier part, a register with multiple functionalities has been created, with the difference being input and output having 16-bits.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{register16.png}	
+	\caption{16-bit register's design}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{16bitregistercode.png}	
+	\caption{Code of the 16-bit register}
+	\label{fig1-1}
+\end{figure}
+\singlespacing
+
+Pretty much the same inputs as part 1A, only Din is now 16-bit instead of 8.
+\subsection{PART 2}
+
+\subsubsection{PART 2A}
+In this part, utilizing the registers created earlier, a register file, which is essentially a structure that contains many registers, will be created.
+
+For this part, the following parts were used:
+\singlespacing
+• Multiplexer: It is used in order to select from the data that is given by the registers, the multiplexer selects according to the OutA and OutB inputs for their respective multiplexers.
+\singlespacing
+• 8-bit Register: It is used for simple functions and operations with the given input, similar to the one made in part 1.
+\singlespacing
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{registerfile.png}	
+	\caption{Design of the register file}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{registerfilecode.png}	
+	\caption{Code of the register file}
+	\label{fig1-1}
+\end{figure}
+
+CLK is for the clock, OutASel and OutBSel are for selecting whether the output will be given by the multiplexer, FunSel has the same purpose as it had in the previous part, RegSel is for deciding which Registers will be active and lastly Data_in is for getting the input to load.
+
+\singlespacing
+
+
+\subsubsection{PART 2B}
+Building up on the design that was created in part 2A, the file register is now modified to be a address register file. It has a program counter (PC), an address register (AR), and a stack pointer (SP) and one less register compared to previous part. Other than that there is no notable difference.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{arf.png}	
+	\caption{Design of address register file}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{Arfcode.png}
+	\caption{Code of address register file}
+	\label{fig1-1}
+\end{figure}
+\singlespacing
+
+Pretty much the same inputs as the previous part.
+
+\subsubsection{PART 2C}
+For this part an 16-bit IR register has been designed, purpose of this register is to store an 8-bit input on the front or back half of a 16-bit bit register. In addition to this the 16-bit register also has to retain it's functionality and must be able to load 8-bit parts from its 16-bit memory.
+
+A 16-bit register is connected to multiple multiplexers in order to manage the operations. LowHigh signal is used to determine whether the multiplexer makes the input the front half or the back half of the output. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{IR.png}	
+	\caption{Design of IR register}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{Ircode.png}	
+	\caption{Code of IR register}
+	\label{fig1-1}
+\end{figure}
+
+\singlespacing
+
+
+
+CLK input is for the clock, Enable is the enable signal, IRin is the data input that's going to be used for load, FunSel is to select operations, LowHigh is for selecting whether the 8-bit data will be written to the first or second half.
+
+\subsection{PART 3}
+For this part an ALU has been designed, this module takes two 8-bit inputs and applies an operation depending on FunSel which gives the output as an 8-bit data. While the operations commence, the ZCNO flags can trigger to signify certain situations happening.
+
+The parts that were used in this module are as follows:
+
+• Multiplexer: It is used to choose instructions according to FunSel input.
+\singlespacing
+• ADDER : It is used to construct A+B instruction.
+\singlespacing
+• SUBTRACTER : It is used to construct A-B instruction.
+\singlespacing
+• NOT : It is usedto construct Not A, Not B instructions.
+\singlespacing
+• AND : It is used to construct A.B instruction.
+\singlespacing
+• OR : It is used to construct A+B instruction.
+\singlespacing
+• XOR : It is used to construct A⊕B instruction.
+\singlespacing
+• Logical Left : It is used to construct lsl A, asl A instructions.
+\singlespacing
+• Logical Right : It is used to construct lsr A instruction.
+\singlespacing
+• Logical Left : It is used to construct lsl A instruction.
+\singlespacing
+• Arithmetic Right : It is used to construct asr A instruction.
+\singlespacing
+• Rotate left : It is used to construct csl A instruction.
+\singlespacing
+• Rotate Right : It is used to construct csr A instruction.
+\singlespacing
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{alu (2).png}	
+	\caption{PART 3}
+	\label{fig1-1}
+\end{figure}
+\singlespacing
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{alucode.png}	
+	\caption{PART 3}
+	\label{fig1-1}
+\end{figure}
+The only relevant inputs for this module are the A and B 8-bit inputs and FunSel for selecting the operation.
+
+
+\subsection{PART 4}
+With all the pieces designed only thing left to do is to assemble them. Using the Multiplexer, Register File, Address Register File, IR Register made in the earlier parts in addition to a memory. 
+
+The parts in the system are used for the following functions:
+
+• Multiplexer: For selection and the navigation of the data given from various sources in the system.
+\singlespacing
+• Various Registers: Storing the data and accessing and using the various operations available on them whenever they are needed.
+\singlespacing
+• ALU: Used for arithmetic and logic operations on the data it has been given.
+\singlespacing
+• Memory Module: For accessing the data stored in it with an address.
+\singlespacing
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\textwidth]{alusystem.png}	
+	\caption{Design of the system}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{alusystemcode.png}	
+	\caption{Code of the system}
+	\label{fig1-1}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.8\textwidth]{lastpart.png}	
+	\caption{Project Test 1 results.}
+	\label{fig1-1}
+\end{figure}
+\singlespacing
+
+The inputs that were part of other components designed in the previous parts retain the same functionality. Only new inputs are memory related, and the only relevant one being MemWR, which is used for writing into the memory.
+
+\singlespacing
+\end{document}
+
+

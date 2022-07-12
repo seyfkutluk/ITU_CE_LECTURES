@@ -1,0 +1,399 @@
+\documentclass[pdftex,12pt,a4paper]{article}
+\usepackage{graphicx}  
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{breakcites}
+\usepackage{indentfirst}
+\usepackage{pgfgantt}
+\usepackage{pdflscape}
+\usepackage{float}
+\usepackage{epsfig}
+\usepackage{epstopdf}
+\usepackage[cmex10]{amsmath}
+\usepackage{stfloats}
+\usepackage{multirow}
+
+\renewcommand{\refname}{REFERENCES}
+\linespread{1.3}
+
+\usepackage{mathtools}
+%\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\thispagestyle{empty}
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\textbf{}\\
+\textbf{\Large{ISTANBUL TECHNICAL UNIVERSITY}}\\
+\vspace{0.5cm}
+\textbf{\Large{COMPUTER ENGINEERING DEPARTMENT}}\\
+\vspace{2cm}
+\textbf{\Large{BLG 222E\\ DIGITAL CIRCUITS LABORATORY\\ EXPERIMENT REPORT}}\\
+\vspace{2.8cm}
+\begin{table}[ht]
+\centering
+\Large{
+\begin{tabular}{lcl}
+\textbf{PROJECT NO}  & : & 1 \\
+\textbf{PROJECT DATE}  & : & 26.05.2022 \\
+\textbf{GROUP NO}  & : & G15 \\
+\end{tabular}}
+\end{table}
+\vspace{1cm}
+\textbf{\Large{GROUP MEMBERS:}}\\
+\begin{table}[ht]
+\centering
+\Large{
+\begin{tabular}{rcl}
+150180073  & : & Seyfülmülük Kutluk \\
+150180118  & : & Burak Engin  Aşıklar \\
+150210734  & : & Ahmet Barış Emre Durak \\
+\end{tabular}}
+\end{table}
+\vspace{2.8cm}
+\textbf{\Large{SPRING 2022}}
+
+\end{center}
+
+\end{titlepage}
+
+\thispagestyle{empty}
+\addtocontents{toc}{\contentsline {section}{\numberline {}FRONT COVER}{}}
+\addtocontents{toc}{\contentsline {section}{\numberline {}CONTENTS}{}}
+\setcounter{tocdepth}{4}
+\tableofcontents
+\clearpage
+
+\setcounter{page}{1}
+
+\section{INTRODUCTION}
+
+In this project a control unit for the system that was created in the previous project has been implemented.
+
+This unit controls the system and sends appropriate signals to the system in order to achieve 15 different operations which are as follows: BRA, LD, ST, MOV, AND, OR, NOT, AND, SUB, LSL, LSR, PUL,PSH, INC, DEC and BNE. In order to recognize and execute these operations properly, a Sequential Counter circuit, Fetch and Decode phases are required.
+
+\section{MATERIALS AND METHODS}
+
+\subsection{CPU & Sequential Counter}
+Sequential Counter(SC) counts the clock cycle. CPU is the part where connection between aluSystem and controlUnit has been made.
+
+\\
+CPU\\
+\begin{figure32}
+	\centering
+	\includegraphics{cpu.png}	
+	\caption{CPU}
+	\label{fig1}
+\end{figure32}
+
+\\
+Sequential Counter\\
+\begin{figure0}
+	\centering
+	\includegraphics{sequntialcounter.png}	
+	\caption{SC}
+	\label{fig0}
+\end{figure0}
+
+
+\subsection{Fetch}
+In the fetch phase, the instructions in the memory are fetched according to little endian order because memory has 8-bit output and instructions are consist of 16-bit. It is obvious that the fetch phase should occupy first 2 clock cycles, T0 and T1. When the T0 and T1
+clock signals are on, control unit must open the way of memory output to the instruction register and all other registers must be disabled to prevent any unwanted data changes.
+
+\begin{figure1}
+	\centering
+	\includegraphics{fetch.png}	
+	\caption{Fetch}
+	\label{fig1}
+\end{figure1}
+
+• Except IR LH All other values are same  since in one clock cycle it fills first part in the other clock cycle it fills remaining.
+
+\subsection{Decode}
+In the decode stage, our design selects which operation is going to be executed, which functionality of the ALU is going to be used. To determines mentioned the Instruction must be broken into pieces
+
+
+Instructions:\\
+
+• Address Referenced Instruction\\
+
+–Address = Instruction(0-7)\\
+
+–RegSel = Instruction(8-9)\\
+
+–AddressingMode = Instruction(10)\\
+
+–OpCode = Instruction(12-15)\\
+
+• Non-Address Referenced Instruction\\
+
+–SrcReg2 = Instruction(0-3)\\
+
+–SrcReg1 = Instruction(4-7)\\
+
+–DestReg = Instruction(8-11)\\
+
+–OpCode = Instruction(12-15)\\
+
+
+\begin{figure2}
+	\centering
+	\includegraphics{decode1.png}	
+	\caption{DECODE}
+	\label{fig1}
+\end{figure2}
+
+\subsection{BRA(x00)and BNE(x0F)}
+It corresponds to BRA operation if IR(15-12) (Opcode) equals selected samples after fetch and decode operations, and it corresponds to BNE operation if IR(15-12)(Opcode) equals0x0F. BRA and BNE operations are almost identical, with the exception of one slight difference. When Z is equal to 0, the BNE procedure is performed. In BRA and BNE operations, the address reference format instructions that were already written to IR at T0 and T1 timings are used. The BRA and BNE methods only work in Immediate addressing mode, and their primary function is to move the value from the instruction's Address Field (IR(7-0)) to the Program Counter (PC).
+
+\begin{figure3}
+	\centering
+	\includegraphics{bracode.png}
+	\caption{BRA CODE}
+	\label{fig1}
+\end{figure3}
+
+The only difference is in BNE Z should be 0.
+\\
+\\
+\begin{figure10}
+	\centering
+	\includegraphics{bneCode.png}	
+	\caption{BNE CODE}
+	\label{fig1}
+\end{figure10}
+
+
+\begin{figure4}
+	\centering
+	\includegraphics{bra.png}	
+	\caption{BRA}
+	\label{fig1}
+\end{figure4}
+
+
+\subsection{PSH(0x0C)}
+We write the needed register value (Rx) to the SP (Stack Pointer) address register's memory location, then reduce the SP value by one.
+
+\begin{figure173}
+	\centering
+	\includegraphics{PSH.png}	
+	\caption{PSH}
+	\label{fig0}
+\end{figure173}
+
+\subsection{PUL(0x0B)}
+To perform this action, we first increase the SP value by one, then read the value at the SP address from memory and write it to the desired Rx register:
+
+\begin{figure182}
+	\centering
+	\includegraphics{PULL.png}	
+	\caption{PULL}
+	\label{fig0}
+\end{figure182}
+
+\subsection{LD(0x01)}
+If IR(15-12) (Opcode) equals 0x01 after fetch and decode operations, it corresponds to LD operation. The address reference format instructions that were already written to IR at T0 and T1 times are used in the LD operation. The basic goal of the LD operation is to determine the value based on the addressing mode and then transfer it to the chosen register destination. Two alternative addressing modes are available for LD operations. If IR(10) (addressing mode) is set to 0, the LD operation is performed in direct mode.
+If the value of IR(10) (addressing mode) is 1, the LD operation is performed in Immediate addressing mode.
+
+
+\begin{figure5}
+	\centering
+	\includegraphics{ldCode.png}	
+	\caption{LD}
+	\label{fig1}
+\end{figure5}
+
+
+\begin{figure6}
+	\centering
+	\includegraphics{ld.png}	
+	\caption{LD}
+	\label{fig1}
+\end{figure6}
+
+
+
+\subsection{ST(0x02)}
+If IR(15-12) (Opcode) equals 0x02 after fetch and decode operations, it corresponds to ST operation. The ST procedure makes advantage of the address reference format instructions that were previously written to IR at T0 and T1. The primary goal of the ST operation is to transfer data from a desired register source to a memory place based on the address value in the AR, which corresponds to direct addressing mode. Only Direct addressing mode will used for ST operations.
+
+
+
+\begin{figure7}
+	\centering
+	\includegraphics{st.png}	
+	\caption{ST}
+	\label{fig1}
+\end{figure7}
+
+
+
+\subsection{MOV(0x03)}
+If Opcode is equal to 0x03 after the retrieve and decode operations, it corresponds to the MOV operation. In just one clock cycle, the MOV operation moves data from the SRCREG to the DESTREG. There are four possible data movements in this operation. It is enough to show only one of the operations in simulation
+because they have nearly the same simulation paramters.
+
+
+\subsubsection{• From ARF to ARF}
+\subsubsection{• From ARF to RF}
+
+\begin{figure20}
+	\centering
+	\includegraphics{mov1Code.png}	
+	\caption{MOV}
+	\label{fig1}
+\end{figure20}
+
+\subsubsection{• From RF to RF}
+\subsubsection{• From RF to ARF}
+
+\begin{figure21}
+	\centering
+	\includegraphics{mov2Code.png}	
+	\caption{MOV}
+	\label{fig1}
+\end{figure21}
+
+\begin{figure8}
+	\centering
+	\includegraphics{mov.png}	
+	\caption{MOV}
+	\label{fig1}
+\end{figure8}
+
+
+\subsection{NOT(x06),LSR(0x09),LSL(0x0A)}
+
+After fetch and decode operations. We have to find from which register we are taking the value and to which register we are writing the value with spesific operations.
+
+\subsubsection{• From NOT/LSR/LSL ARF to ARF}
+\subsubsection{• From NOT/LSR/LSL ARF to RF}
+\begin{figure61}
+	\centering
+	\includegraphics{notcode1.png}	
+	\caption{NOT}
+	\label{fig1}
+\end{figure61}
+
+
+\subsubsection{• From NOT/LSR/LSL RF to RF}
+\subsubsection{• From NOT/LSR/LSL RF to ARF}
+
+
+\begin{figure81}
+	\centering
+	\includegraphics{notcode2.png}	
+	\caption{NOT}
+	\label{fig1}
+\end{figure81}
+
+
+\begin{figure51}
+	\centering
+	\includegraphics{not.png}	
+	\caption{NOT}
+	\label{fig1}
+\end{figure51}
+
+
+
+\newpage
+
+\subsection{INC(0x0D), DEC(0x0E)}
+At the first stage of the fetch phase registers of the Register File were reset.
+For the increment and decrement operation register RX is going to be used.
+In order to use it 1 must be loaded. The initial value stored in the is 0. 1 can be
+loaded by using the increment functionality of the register itself.
+
+\begin{figure9}
+	\centering
+	\includegraphics{inc.png}	
+	\caption{INC}
+	\label{fig1}
+\end{figure9}
+
+\begin{figure10}
+	\centering
+	\includegraphics{dec.png}	
+	\caption{DEC}
+	\label{fig1}
+\end{figure10}
+
+
+\newpage
+
+
+\subsection{AND(x04), OR(x05),ADD(x07)}
+Following the fetch and decode operations, we can investigate and combine operations with Opcodes of 0x04 (AND), 0x05 (OR), 0x07 (ADD). This is due to the fact that all of these operations have two inputs and are performed entirely in the ALU. The result is assigned to the DESTREG after an operation with SRCREG1 and SRCREG2. The following are the operations:\\
+
+
+
+
+• SRCREG2 AND SRCREG1 DESTREG (Opcode = 0x04)\\
+• SRCREG2 OR SRCREG1 (Opcode = 0x05) DESTREG\\
+• SRCREG2 + SRCREG1 (Opcode = 0x07) DESTREG\\
+• SRCREG2 - SRCREG1 (Opcode = 0x08) DESTREG\\
+
+\begin{figure41}
+	\centering
+	\includegraphics[scale=0.5]{addsim.png}	
+	\caption{ADD}
+	\label{fig1}
+\end{figure41}
+
+
+\subsubsection{• From ARF AND/OR/ADD ARF to ARF}
+\subsubsection{• From ARF AND/OR/ADD ARF to RF}
+\subsubsection{• From ARF AND/OR/ADD  RF to RF}
+\subsubsection{• From ARF AND/OR/ADD RF to ARF}
+
+\subsubsection{• From RF AND/OR/ADD ARF to ARF}
+\subsubsection{• From RF AND/OR/ADD ARF to RF}
+\subsubsection{• From RF AND/OR/ADD  RF to RF}
+\subsubsection{• From RF AND/OR/ADD RF to ARF}
+\newpage
+
+\subsection{SUB(x08)}
+Following the fetch and decode operations, we can investigate and combine operations with Opcodes of 0x08(SUB). The SUB is same as ADD with some minor changes. Because SUB needs SRCREG2 - SRCREG1. This order should be protected. SUB has two inputs and are performed entirely in the ALU. The result is assigned to the DESTREG after an operation with SRCREG1 and SRCREG2. 
+
+
+
+\begin{figure31}
+	\centering
+	\includegraphics{sub.png}	
+	\caption{SUB}
+	\label{fig1}
+\end{figure31}
+
+\newpage
+
+\section{RESULTS}
+In order to test the project's success, the example given in the assignment paper has been tried, the results are as follows:
+
+\begin{figure1231}
+	\centering
+	\includegraphics[scale=0.4]{results.png}	
+	\caption{Results of the example case}
+	\label{fig1}
+\end{figure1231}
+
+\begin{figure1331}
+	\centering
+	\includegraphics[scale=0.4]{results2.png}	
+	\caption{Results of the example case}
+	\label{fig1}
+\end{figure1331}
+
+\begin{figure1431}
+	\centering
+	\includegraphics[scale=0.4]{results3.png}	
+	\caption{Results of the example case}
+	\label{fig1}
+\end{figure1431}
+
+\newpage
+
+\section{CONCLUSION}
+A hardwired control unit for a simple computer system was constructed in this project. Various aspects of this project, such as registers, ALUs, and multiplexers, have been implemented using structures from the preceding project. To begin with, Fetch and Decode cycles were formed because they are required at the start of all operations. The operations that corresponded to the Opcode were then constructed. With all of the simulations meant to see if certain operations operate as expected, the module can be said to function properly.
+
+\par The team enhanced their Vivado skills and learned more about basic computer control units while working on this project. This has helped to put what was taught in the Computer Organization course into context.
+
+\end{document}
+
