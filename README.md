@@ -23,3 +23,11 @@ operating_systems_BLG_312E
 secure_programming_BLG_460
 
 signal_systems_BLG_354
+
+## NOTE 
+
+Since the repository is pretty big or its gonna get bigger if you want to clone(download) specific folder you can visit one of the belove websites and use them.
+
+  * [DownGit](https://downgit.github.io/#/home)
+  
+  * [download-directory](https://download-directory.github.io/)
