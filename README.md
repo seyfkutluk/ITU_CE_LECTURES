@@ -1,28 +1,30 @@
 # ITU_CE_LECTURES
 
-algorithms2_BLG_336E
+## You can download specific lecture folders using links in below
 
-algorithms_BLG335E
+  * [algorithms2_BLG_336E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/algorithms2_BLG_336E)
 
-basics_of_electrical_circuits_EHB_211E
+  * [algorithms_BLG335E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/algorithms_BLG335E) 
 
-c_programming_BLG_102E
+   * [basics_of_electrical_circuits_EHB_211E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/basics_of_electrical_circuits_EHB_211E) 
 
-computer_organization_BLG_222E
+  * [c_programming_BLG_102E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/c_programming_BLG_102E)  
 
-data_structures_BLG223E
+  * [computer_organization_BLG_222E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/computer_organization_BLG_222E)  
 
-digital_circuits_BLG_231
+  * [data_structures_BLG223E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/data_structures_BLG223E)  
 
-math_MAT_210E
+  * [digital_circuits_BLG_231](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/digital_circuits_BLG_231)  
 
-numerical_methods_BLG_202
+  * [math_MAT_210E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/math_MAT_210E)  
 
-operating_systems_BLG_312E
+  * [numerical_methods_BLG_202](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/numerical_methods_BLG_202)  
 
-secure_programming_BLG_460
+  * [operating_systems_BLG_312E](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/operating_systems_BLG_312E)  
 
-signal_systems_BLG_354
+  * [secure_programming_BLG_460](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/secure_programming_BLG_460)  
+
+  * [signal_systems_BLG_354](https://downgit.github.io/#/home?url=https://github.com/seyfkutluk/ITU_CE_LECTURES/tree/main/signal_systems_BLG_354)  
 
 ## NOTE 
 
